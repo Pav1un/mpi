@@ -1,0 +1,6 @@
+C:\Users\QUO\Documents\Visual Studio 2010\Projects\Samples for Parallel Programming with the .NET Framework\C#,C++,F#,VB\ComputePi\ComputePi_CSharp\bin\Debug\ComputePi.exe.config
+C:\Users\QUO\Documents\Visual Studio 2010\Projects\Samples for Parallel Programming with the .NET Framework\C#,C++,F#,VB\ComputePi\ComputePi_CSharp\bin\Debug\ComputePi.exe
+C:\Users\QUO\Documents\Visual Studio 2010\Projects\Samples for Parallel Programming with the .NET Framework\C#,C++,F#,VB\ComputePi\ComputePi_CSharp\bin\Debug\ComputePi.pdb
+C:\Users\QUO\Documents\Visual Studio 2010\Projects\Samples for Parallel Programming with the .NET Framework\C#,C++,F#,VB\ComputePi\ComputePi_CSharp\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\QUO\Documents\Visual Studio 2010\Projects\Samples for Parallel Programming with the .NET Framework\C#,C++,F#,VB\ComputePi\ComputePi_CSharp\obj\Debug\ComputePi.exe
+C:\Users\QUO\Documents\Visual Studio 2010\Projects\Samples for Parallel Programming with the .NET Framework\C#,C++,F#,VB\ComputePi\ComputePi_CSharp\obj\Debug\ComputePi.pdb

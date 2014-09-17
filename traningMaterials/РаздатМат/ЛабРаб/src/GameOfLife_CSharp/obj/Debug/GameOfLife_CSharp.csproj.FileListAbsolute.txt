@@ -1,0 +1,12 @@
+C:\Users\QUO\Documents\Visual Studio 2010\Projects\Samples for Parallel Programming with the .NET Framework\C#,C++,F#,VB\GameOfLife\GameOfLife_CSharp\bin\Debug\GameOfLife.exe.config
+C:\Users\QUO\Documents\Visual Studio 2010\Projects\Samples for Parallel Programming with the .NET Framework\C#,C++,F#,VB\GameOfLife\GameOfLife_CSharp\bin\Debug\GameOfLife.exe
+C:\Users\QUO\Documents\Visual Studio 2010\Projects\Samples for Parallel Programming with the .NET Framework\C#,C++,F#,VB\GameOfLife\GameOfLife_CSharp\bin\Debug\GameOfLife.pdb
+C:\Users\QUO\Documents\Visual Studio 2010\Projects\Samples for Parallel Programming with the .NET Framework\C#,C++,F#,VB\GameOfLife\GameOfLife_CSharp\bin\Debug\ParallelExtensionsExtras.dll
+C:\Users\QUO\Documents\Visual Studio 2010\Projects\Samples for Parallel Programming with the .NET Framework\C#,C++,F#,VB\GameOfLife\GameOfLife_CSharp\bin\Debug\ParallelExtensionsExtras.pdb
+C:\Users\QUO\Documents\Visual Studio 2010\Projects\Samples for Parallel Programming with the .NET Framework\C#,C++,F#,VB\GameOfLife\GameOfLife_CSharp\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\QUO\Documents\Visual Studio 2010\Projects\Samples for Parallel Programming with the .NET Framework\C#,C++,F#,VB\GameOfLife\GameOfLife_CSharp\obj\Debug\GameOfLife.MainForm.resources
+C:\Users\QUO\Documents\Visual Studio 2010\Projects\Samples for Parallel Programming with the .NET Framework\C#,C++,F#,VB\GameOfLife\GameOfLife_CSharp\obj\Debug\GameOfLife.Properties.Resources.resources
+C:\Users\QUO\Documents\Visual Studio 2010\Projects\Samples for Parallel Programming with the .NET Framework\C#,C++,F#,VB\GameOfLife\GameOfLife_CSharp\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\QUO\Documents\Visual Studio 2010\Projects\Samples for Parallel Programming with the .NET Framework\C#,C++,F#,VB\GameOfLife\GameOfLife_CSharp\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\QUO\Documents\Visual Studio 2010\Projects\Samples for Parallel Programming with the .NET Framework\C#,C++,F#,VB\GameOfLife\GameOfLife_CSharp\obj\Debug\GameOfLife.exe
+C:\Users\QUO\Documents\Visual Studio 2010\Projects\Samples for Parallel Programming with the .NET Framework\C#,C++,F#,VB\GameOfLife\GameOfLife_CSharp\obj\Debug\GameOfLife.pdb

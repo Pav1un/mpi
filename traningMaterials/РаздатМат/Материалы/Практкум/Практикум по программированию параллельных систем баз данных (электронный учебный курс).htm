@@ -1,0 +1,289 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=KOI8-R">
+<meta http-equiv="Content-Language" content="ru">
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Практикум по программированию параллельных систем баз данных (электронный 
+учебный курс)</title>
+</head>
+<body alink="#990099" background="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20(%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81)_files/sumtextb.jpg" bgcolor="#FFFFFF" link="#3333CC" text="#000066" vlink="#666699">
+  <div align="center">
+    <center>
+    </center><center>
+
+      </center><table border="0" cellpadding="0" cellspacing="3">
+  <tbody><tr>
+      <td colspan="2" align="left" valign="top">
+
+      
+
+<h1 style="margin-bottom: 10" align="center"><font color="#003366"><font face="Comic Sans MS" size="7">Практикум 
+по программированию<br>
+параллельных систем баз данных</font></font></h1>
+    
+</td>
+
+      </tr>
+    <tr><td align="left" valign="middle">
+      <center>
+
+      <h2 style="text-indent: 0; margin-left: 0; margin-right: 0; margin-top: 5" align="center"><font color="#003366"><b> 
+  Л.Б. Соколинский, М.Л. Цымблер</b></font></h2>
+      <h3 style="text-indent: 0; margin-left: 0; margin-right: 0" align="center"><font color="#003366">Электронный учебный
+курс</font></h3>
+<h4 style="text-indent: 0; line-height: 100%; margin-left: 0; margin-right: 0; margin-bottom: 0" align="center"><font color="#003366">Челябинск: ЮУрГУ, 2004</font></h4>
+<p style="margin-bottom: 5" align="left"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/sumhorsa.gif"></p>
+    </center>
+      <p style="margin-top: 0; margin-bottom: 5" align="left"><a href="#%E1%CE%CE%CF%D4%C1%C3%C9%D1"><strong>Аннотация</strong></a></p></td>
+
+    <td align="center" valign="top">
+
+          <p><a href="http://www.rfbr.ru/"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/rffi_logo.gif" alt="Курс разработан при финансовой поддержке РФФИ (проект 03-07-90031)" border="0" height="94" width="92"></a></p>
+        </td>
+
+      </tr>
+<tr>
+      <td colspan="2" align="left" valign="middle">
+
+<p style="text-indent: 0; line-height: 100%; margin: 0" align="left"><strong><a href="http://pdbs.susu.ru/CourseSyllabus.html">Программа 
+  курса</a></strong><em><strong> </strong></em><a href="http://pdbs.susu.ru/CourseSyllabus.html"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/ie_icon.gif" alt="Программа курса (HTML)" align="middle" border="0" height="22" width="22"></a>
+<a href="http://pdbs.susu.ru/CourseSyllabus.pdf"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/pdficon.gif" alt="Программа курса (PDF)" align="middle" border="0" height="22" width="22"></a></p></td>
+
+</tr>
+<tr>
+      <td colspan="2" align="left" valign="middle">
+
+<p style="text-indent: 0; line-height: 100%; margin: 0" align="left"><strong><a href="http://pdbs.susu.ru/CourseManual.html">Тексты 
+лекций</a> </strong><a href="http://pdbs.susu.ru/CourseManual.html"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/ie_icon.gif" alt="Тексты лекций (HTML)" align="middle" border="0" height="22" width="22"></a>
+<a href="http://pdbs.susu.ru/CourseManual.pdf"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/pdficon.gif" alt="Тексты лекций (PDF)" align="middle" border="0" height="22" width="22"></a></p>
+</td>
+
+</tr>
+<tr>
+      <td colspan="2" align="left" valign="middle">
+
+<p style="text-indent: 0; line-height: 100%; margin: 0" align="left"><strong><a href="http://pdbs.susu.ru/CoursePresentation.html">Слайды&nbsp;презентации</a>
+</strong><a href="http://pdbs.susu.ru/CoursePresentation.html"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/ie_icon.gif" alt="Слайды презентации (HTML)" align="middle" border="0" height="22" width="22"></a>
+<a href="http://pdbs.susu.ru/CoursePresentation.pdf"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/pdficon.gif" alt="Слайды презентации (PDF)" align="middle" border="0" height="22" width="22"></a></p></td>
+
+</tr>
+<tr>
+      <td colspan="2" align="left" valign="middle">
+
+<p style="text-indent: 0; line-height: 100%; margin: 0" align="left">
+<strong><a href="http://pdbs.susu.ru/CourseLabManual.html">Задания 
+  к лабораторным работам</a> </strong><a href="http://pdbs.susu.ru/CourseLabManual.html"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/ie_icon.gif" alt="Задания к лабораторным работам (HTML)" align="middle" border="0" height="22" width="22"></a>
+<a href="http://pdbs.susu.ru/CourseLabManual.pdf"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/pdficon.gif" alt="Задания к лабораторным работам (PDF)" align="middle" border="0" height="22" width="22"></a></p></td>
+
+</tr>
+<tr>
+      <td colspan="2" align="left" valign="middle">
+
+<p style="text-indent: 0; line-height: 100%; margin: 0" align="left">
+<strong><a href="http://pdbs.susu.ru/guider/index.html">Внутренние
+спецификации</a> </strong><a href="http://pdbs.susu.ru/guider/index.html"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/ie_icon.gif" alt="Внутренние спецификации (HTML)" align="middle" border="0" height="22" width="22"></a>
+<a href="http://pdbs.susu.ru/download/guider.zip"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/zip.gif" alt="Внутренние спецификации (zip-архив)" align="middle" border="0" height="22" width="26"></a></p></td>
+
+</tr>
+<tr>
+      <td colspan="2" align="left" valign="middle">
+
+<strong><a href="http://pdbs.susu.ru/tests.html">Описание комплексных
+тестов</a> </strong><a href="http://pdbs.susu.ru/tests.html"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/ie_icon.gif" alt="Описание комплексных тестов (HTML)" align="middle" border="0" height="22" width="22"></a>
+<a href="http://pdbs.susu.ru/tests.pdf"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/pdficon.gif" alt="Описание комплексных тестов (PDF)" align="middle" border="0" height="22" width="22"></a></td>
+
+</tr>
+<tr>
+      <td colspan="2" align="left" valign="middle">
+
+<b>Автономные тесты</b><a href="http://pdbs.susu.ru/download/check.zip"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/zip.gif" alt="Автономные тесты (zip-архив)" align="middle" border="0" height="22" width="26"></a></td>
+
+</tr>
+<tr>
+      <td colspan="2" align="left" valign="middle">
+
+<strong>Поддерживающая библиотека</strong><a href="http://pdbs.susu.ru/download/pdbmslib.zip"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/zip.gif" alt="Поддерживающая библиотека (zip-архив)" align="middle" border="0" height="22" width="26"></a></td>
+
+</tr>
+<tr>
+      <td colspan="2" align="left" valign="middle">
+
+<strong>Текст головного модуля</strong><a href="http://pdbs.susu.ru/download/pardbms.zip"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/zip.gif" alt="Текст головного модуля (zip-архив)" align="middle" border="0" height="22" width="26"></a>
+
+</td>
+
+</tr>
+<tr>
+      <td colspan="2" align="left" valign="middle">
+
+<b>Файлы данных для комплексного
+тестирования</b><a href="http://pdbs.susu.ru/download/tests.zip"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/zip.gif" alt="Файлы данных для комплексного тестирования (zip-архив)" align="middle" border="0" height="22" width="26"></a></td>
+
+</tr>
+<tr>
+      <td colspan="2" align="left" valign="middle">
+
+<b>Исходные тексты поддерживающей
+библиотеки <font size="2">(<i>ограниченный доступ</i>)</font></b><font size="2">&nbsp;</font><a href="http://pdbs.susu.ru/download/sources/pdbms.zip"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/zip.gif" alt="Исходные тексты поддерживающей библиотеки (zip-архив)" align="middle" border="0" height="22" width="26"></a></td>
+
+</tr>
+    <tr>
+      <td colspan="2" align="left" valign="top">
+
+<p align="left"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/sumhorsa.gif"></p>
+</td>
+
+      </tr>
+    </tbody></table>
+    
+  </div>
+<h2 style="margin-top: 10" align="center"><font color="#003366"><a name="Аннотация"><font face="Comic Sans MS">Аннотация</font></a></font></h2>
+<p align="left"> <font face="Comic Sans MS">Содержание курса</font></p>
+<blockquote>
+<p align="left"> Курс посвящен одному 
+  из самых сложных и интересных разделов системного программирования - параллельным 
+  системам баз данных. Параллельные системы баз данных призваны решать задачи, 
+  связанные с обработкой и поддержанием
+сверхбольших баз данных. Сверхбольшие 
+  базы данных характерны для таких приложений, как электронная коммерция, электронные 
+  библиотеки, геоинформационные системы, мультимедийные архивы, научные базы данных. Курс ориентирован на студентов старших
+курсов и аспирантов, специализирующихся по
+направлению "Информационные технологии".</p>
+<p align="left">В лекционной части 
+  курса рассматриваются следующие основные темы:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <td valign="top" width="42">
+      <p align="left"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/sumbul1a.gif" height="15" hspace="13" width="15"></p>
+    </td>
+    <td valign="top" width="100%">
+      <p align="left">классификация 
+    видов и форм параллельной обработки транзакций;</p>
+    </td>
+</tr>
+<tr>
+  <td valign="baseline" width="42">
+    <p align="left"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/sumbul1a.gif" height="15" hspace="13" width="15"></p>
+  </td>
+  <td valign="top" width="100%">
+    <p align="left">классификация 
+    и сравнительный анализ архитектур параллельных систем баз данных;</p>
+  </td>
+</tr>
+<tr>
+  <td valign="baseline" width="42">
+    <p align="left"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/sumbul1a.gif" height="15" hspace="13" width="15"></p>
+  </td>
+  <td valign="top" width="100%">
+    <p align="left">требования к параллельной СУБД;</p>
+  </td>
+</tr>
+<tr>
+  <td valign="baseline" width="42">
+    <p align="left"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/sumbul1a.gif" height="15" hspace="13" width="15"></p>
+  </td>
+  <td valign="top" width="100%">
+    <p align="left">организация 
+    выполнения запросов в параллельных системах баз данных.</p>
+  </td>
+</tr>
+</tbody></table>
+<p align="left"> Лабораторный практикум 
+  предполагает выполнение небольшого индивидуального проекта по созданию прототипа 
+  параллельной СУБД, работающей под управлением операционной системы Windows и 
+  пакета MPI. В качестве системы
+программирования предполагается Microsoft Visual C++. Практикум 
+  оснащен методическими указаниями и
+поддерживающей библиотекой, избавляющей
+студентов от рутинной части работы.</p>
+  </blockquote>
+<p align="left"> <font face="Comic Sans MS">Уровень 
+  подготовки</font></p>
+  <blockquote>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <td valign="baseline" width="42">
+      <p align="left"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/sumbul1a.gif" height="15" hspace="13" width="15"></p>
+    </td>
+    <td valign="top" width="100%"> 
+      <p align="left"> Знание материала 
+    университетского курса по системам баз данных в объеме учебника [ Дейт К.Дж. 
+    Введение в системы баз данных. - К.: Диалектика, 1998. - 784 с.] или [Ульман 
+    Дж., Уидом Д. Основы систем баз данных. - М.: ЛОРИ, 2000. - 374 с.].</p>
+    </td>
+</tr>
+<tr>
+  <td valign="baseline" width="42">
+    <p align="left"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/sumbul1a.gif" height="15" hspace="13" width="15"></p>
+  </td>
+  <td valign="top" width="100%">
+    <p align="left">Навыки программирования 
+    на языке Си.</p>
+  </td>
+</tr>
+</tbody></table>
+  </blockquote>
+<p align="left"><font face="Comic Sans MS">Авторы 
+  курса</font></p>
+<table border="0" width="99%">
+  <tbody><tr> 
+    <td width="9%"> 
+      <div align="center">
+          <p align="left">
+		  <img alt="" src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/Sokolinsky.jpg" height="186" width="140">&nbsp;</p></div>
+    </td>
+    <td width="91%"> 
+      <p align="left"><b>Соколинский 
+        Леонид Борисович</b></p>
+      <p align="left">Доктор физико-математических 
+        наук, профессор, заведующий <a href="http://computer.susu.ru/">кафедрой системного 
+        программирования </a> <a href="http://www.susu.ac.ru/">Южно-Уральского государственного 
+        университета</a>. Является одним из ведущих российских специалистов в 
+        области параллельных баз данных. Его <a href="http://sok.susu.ru/dissertation/">докторская 
+        диссертация</a> была посвящена методам организации параллельных систем 
+        баз данных на вычислительных системах с массовым параллелизмом. Руководитель 
+        <a href="http://sok.susu.ru/OmegaProject/">проекта создания параллельной 
+        СУБД Омега</a> для мультипроцессорных вычислительных систем с кластерной 
+		архитектурой. Л.Б. Соколинским <a href="http://sok.susu.ru/publications.html">опубликовано 
+        более <span lang="en-us">7</span>0 научных работ</a> в области системного программирования и информационных 
+        технологий. Персональная страница: <a href="http://sok.susu.ru/">http://sok.susu.ru</a>.</p>
+    </td>
+  </tr>
+  <tr> 
+    <td width="9%"> 
+      <div align="center">
+        <p align="left"><a href="http://mzym.susu.ru/"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/Zymbler.jpg" border="0" height="185" width="140"></a>&nbsp;&nbsp;</p></div>
+    </td>
+    <td width="91%"> 
+      <p align="left"><b>Цымблер 
+        Михаил Леонидович</b></p>
+      <p align="left">Кандидат 
+        физико-математических наук, доцент <a href="http://computer.susu.ru/">кафедры 
+        системного программирования</a> <a href="http://www.susu.ac.ru/">Южно-Уральского 
+        государственного университета</a>. Его<a href="http://mzym.susu.ru/dissertation/"> 
+        кандидатская диссертация</a> была посвящена методам построения программного 
+        комплекса для управления данными в вычислительных системах с массовым 
+        параллелизмом. Является участником <a href="http://sok.susu.ru/OmegaProject/">проекта 
+        создания параллельной СУБД Омега</a> для мультипроцессорных 
+		вычислительных систем с кластерной архитектурой. 
+        М.Л. Цымблером <a href="http://mzym.susu.ru/papers/">опубликовано 
+        более 20 научных и учебно-методических работ</a> по программированию и информационным 
+        технологиям. Персональная страница: <a href="http://mzym.susu.ru/">http://mzym.susu.ru</a>.</p>
+    </td>
+  </tr>
+</tbody></table>
+<p align="left"><img src="%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D1%83%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%B1%D0%B0%D0%B7%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%28%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81%29_files/sumhorsa.gif"></p>
+<table border="0" width="100%">
+  <tbody><tr> 
+    <td><font face="Verdana, Arial, Helvetica, sans-serif" size="1">© 2004-2008 <a href="http://sok.susu.ru/">Л.Б. Соколинский</a>,
+      </font><font face="Verdana, Arial, Helvetica, sans-serif"><a href="http://mzym.susu.ru/"><font size="1">М.Л. Цымблер</font></a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="-3"><!-- #EndDate -->
+      </font></td>
+    <td align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Изменено: </font><font face="Verdana, Arial, Helvetica, sans-serif" size="-3"> 
+      <!-- #BeginDate format:Ge1 -->
+	<!--webbot bot="Timestamp"
+      S-Type="EDITED" S-Format="%d %B %Y г." startspan -->02 сентября 2008 г.<!--webbot bot="Timestamp" i-checksum="48645" endspan -->
+      </font></td>
+  </tr>
+</tbody></table>
+
+</body></html>
